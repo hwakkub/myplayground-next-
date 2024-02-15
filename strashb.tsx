@@ -1,15 +1,8 @@
 "use client";
-import Link from 'next/link'
 import React, { useState } from 'react'
 
 export default function Home() {
-  // const [count, setCount] = useState(0);
-  const [formData, setFormData] = useState({ name: '', age: '' });
-
-  // function handleIncrement() {
-  //   setCount(count + 1);
-  // }
-
+    const [formData, setFormData] = useState({ name: '', age: '' });
   const handleChange = (e:any) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -17,13 +10,6 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      {/* <Link href="/about">Go to about</Link>
-      <Link href={{pathname: "/sentdata",query:{
-        name:"John yea",
-        age:"20",
-      },}}>Go to data</Link>
-      <p>Count: {count}</p>
-      <button onClick={handleIncrement}>Increment</button> */}
       <form method="post" action="/sentdata">
         <label>
           Name:
