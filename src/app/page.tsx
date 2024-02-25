@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import {Form} from "./form/page"
 import { revalidatePath } from 'next/cache';
 import { submitTodo } from './_actions/todo-action';
+import TodoForm from './_component/TodoForm';
 
 type Props = {};
 export default async function Home({}:Props) {
@@ -24,15 +25,7 @@ export default async function Home({}:Props) {
       <p>Count: {count}</p>
       <button onClick={handleIncrement}>Increment</button> */}
        {/* <Form></Form> */}
-      <h1>Todos</h1>
-      <form action={submitTodo}>
-        <input
-          type='text'
-          name='message'
-          className='px-4 py-2 mb-3'
-          placeholder='write your job...'/>
-        <button type='submit'>Submit</button>
-      </form>
+      <TodoForm/>
       <ul>
         {todoList.map((todo)=>(
           <li key={todo.id}>
