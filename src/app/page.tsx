@@ -3,7 +3,8 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import {Form} from "./form/page"
 
-export default function Home() {
+type Props = {};
+export default function Home({}:Props) {
   // const [count, setCount] = useState(0);
 
   // function handleIncrement() {
@@ -19,7 +20,16 @@ export default function Home() {
       },}}>Go to data</Link>
       <p>Count: {count}</p>
       <button onClick={handleIncrement}>Increment</button> */}
-       <Form></Form>
+       {/* <Form></Form> */}
+      <h1>Todos</h1>
+      <form>
+        <input
+          type='text'
+          name='message'
+          className='px-4 py-2 mb-3'
+          placeholder='write your job...'/>
+        <button type='submit'>Subnit</button>
+      </form>
     </main>
   );
 }

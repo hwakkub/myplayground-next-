@@ -1,6 +1,7 @@
 'use client';
 
 import {handleForm} from './actions'
+// import { handleFormNextPage } from './actionNextPage';
 
 export function Form(){
     return(
@@ -10,6 +11,11 @@ export function Form(){
                 <input type="text" name='customerId'/>
                 <button type='submit'>Submit</button>
             </form>
+            {/* action next page */}
+            {/* <form action={handleFormNextPage}>
+                <input type="text" name='customerId'/>
+                <button type='submit'>Submit</button>
+            </form> */}
         </div>
     )
 }
