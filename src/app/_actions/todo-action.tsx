@@ -11,3 +11,8 @@ export const submitTodo = async(formData:FormData)=>{
     });
     revalidatePath("/");
   }
+
+export const resetTodo = async () => {
+  await fetch("http://localhost:3000/api/todo?action=reset");
+  revalidatePath("/");
+}
