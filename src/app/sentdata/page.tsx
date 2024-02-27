@@ -2,6 +2,7 @@
 import React from 'react';
 import Link from 'next/link'
 import { useParams } from 'next/navigation';
+import SendDataToNextPage from '../_component/SendDataToNextPage';
 
 export default function SentData() {
 
@@ -9,9 +10,7 @@ export default function SentData() {
   const { name, age } = useParams();
   return (
     <div>
-      <h2>Page Two</h2>
-      <p>Name: {name}</p>
-      <p>Age: {age}</p>
+      <SendDataToNextPage/>
       <Link href="/">Back to Home</Link>
     </div>
   );

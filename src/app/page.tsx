@@ -6,6 +6,7 @@ import TodoForm from './_component/TodoForm';
 import TodoItem from './_component/TodoItem';
 import CounterButton from './_component/CounterButton';
 import HyperLink from './_component/Link';
+import SendDataForm from './_component/SendDataForm';
 
 type Props = {};
 export default async function Home({}:Props) {
@@ -16,11 +17,12 @@ export default async function Home({}:Props) {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <HyperLink/>
+      {/* <HyperLink/>
       <CounterButton/>
       <Form></Form>
       <TodoForm/>
-      <TodoItem/>
+      <TodoItem/> */}
+      <SendDataForm/>
     </main>
   );
 }
