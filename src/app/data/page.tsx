@@ -2,6 +2,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "About data",
+  description: "hello where is data",
 };
 export default function Data({
   searchParams,
