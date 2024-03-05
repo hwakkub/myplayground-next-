@@ -6,6 +6,7 @@ python with fastapi
 run
 
 - uvicorn main:app --reload --port 3000
+- npm run build (to see error)
 
 special files
 
@@ -14,3 +15,4 @@ special files
 - template.tsx
 - not-found.tsx
 - loading.tsx
+- error.tsx
