@@ -2,6 +2,7 @@ python with fastapi
 
 - pip3 install fastapi
 - pip3 install uvicorn
+- npm install concurrently --save
 
 run
 
