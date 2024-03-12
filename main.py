@@ -9,10 +9,17 @@ class User(BaseModel):
     password: str
     level: Optional[str] = "normal"
 
+
 # http://127.0.0.1:3000/docs
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return {"Hello": "World123"}
+
+@app.get("/json")
+def testjson():
+    # return  {"message": "This is data from FastAPI"}
+    return "hello my name is hwak"
+
 
 @app.get("/hi")
 def hi(name:str):
