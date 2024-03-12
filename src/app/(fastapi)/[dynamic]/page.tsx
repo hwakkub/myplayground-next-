@@ -2,13 +2,17 @@
 // // "use client"
 // import React, { useEffect, useState } from "react";
 
-// async function getData() {
-//   // const res = await fetch("http://127.0.0.1:3000/json");
-//   const res = await fetch("http://127.0.0.1:3000/json");
+// async function getData(data: string) {
+//   const res = await fetch("http://127.0.0.1:3000/items/" + data);
 //   return res.json();
 // }
-// export default async function Fastapi() {
-//   const data = await getData();
+// export default async function Dynamic({
+//   params: { dynamic },
+// }: {
+//   params: { dynamic: string };
+// }) {
+//   const data = await getData(dynamic);
+//   // const data = await getData();
 //   return (
 //     <>
 //       <div>hi</div>
